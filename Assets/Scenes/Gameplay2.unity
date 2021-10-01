@@ -1716,6 +1716,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1416346857}
     m_Modifications:
     - target: {fileID: 2401667792525216419, guid: 29563ef792e3582428d8e8351df1466c, type: 3}
+      propertyPath: HP
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401667792525216419, guid: 29563ef792e3582428d8e8351df1466c, type: 3}
       propertyPath: batas1
       value: 
       objectReference: {fileID: 518885072}
@@ -2969,7 +2973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1416346857
 Transform:
   m_ObjectHideFlags: 0
@@ -3859,7 +3863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1727429051
 Transform:
   m_ObjectHideFlags: 0
@@ -3947,7 +3951,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 1
+  m_Text: Level 2
 --- !u!222 &1748341252
 CanvasRenderer:
   m_ObjectHideFlags: 0
