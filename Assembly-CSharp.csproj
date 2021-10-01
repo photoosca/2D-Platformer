@@ -55,6 +55,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\QuitOrNext.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Data.cs" />
+    <Compile Include="Assets\Scripts\ShowScore.cs" />
+    <Compile Include="Assets\Scripts\AutoReplay.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -649,6 +657,10 @@
       <Project>{C504C2CD-099D-4226-0DFF-EFC603753C4C}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="com.unity.quicksearch.csproj">
+      <Project>{B74D69C0-D5E4-7691-17AC-6032091797BE}</Project>
+      <Name>com.unity.quicksearch</Name>
+    </ProjectReference>
     <ProjectReference Include="PsdPlugin.csproj">
       <Project>{C47ADE14-D6E7-DC6E-D5B9-5E105E2CEE68}</Project>
       <Name>PsdPlugin</Name>
@@ -748,10 +760,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{2E1A9C3F-983C-526A-C7C4-1F72785D12D5}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.quicksearch.csproj">
-      <Project>{B74D69C0-D5E4-7691-17AC-6032091797BE}</Project>
-      <Name>com.unity.quicksearch</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
