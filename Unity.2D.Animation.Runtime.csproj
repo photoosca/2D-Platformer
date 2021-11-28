@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AA98A268-639A-6C99-4E83-826902F8EC10}</ProjectGuid>
+    <ProjectGuid>{CA31B564-C8D0-3A1B-9765-5BEFA29ECDD3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Animation.Runtime</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.6\Runtime\SpriteSkin.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.0.6\Runtime\TransformAccessJob.cs" />
@@ -671,23 +674,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{0E346B36-6C04-CFDA-8C8F-2A344CEB4CAA}</Project>
+      <Project>{34B3EA83-F68A-D07A-0103-1CD3B8C5FC19}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{036C916B-4D0B-91E6-A41C-656DD2F2FBC2}</Project>
+      <Project>{D0CBDE37-4F1F-93FE-B608-343A18ACC0F9}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{E0086160-4CBF-0041-5933-A892E0173340}</Project>
+      <Project>{AD0D7226-0D81-783B-3781-3209533AA82D}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D7E7AA6B-D976-8CDF-65FB-1C2657FE9E6B}</Project>
+      <Project>{F07D918B-FC2E-022C-34BA-4D83A3963E08}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6040513E-62A6-1238-1C18-F968B1834137}</Project>
+      <Project>{2BCD4A29-6192-523A-BCBC-A31E8A5B0F89}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

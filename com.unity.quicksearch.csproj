@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B74D69C0-D5E4-7691-17AC-6032091797BE}</ProjectGuid>
+    <ProjectGuid>{88FE8F52-FAB3-6047-3A76-10EDE1A77ADF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>com.unity.quicksearch</AssemblyName>
@@ -53,114 +53,117 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\BlinkCursorScope.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QuickSearch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionGraph.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\TryConvert.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\AssetPostprocessorIndexer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ChannelService\SearchChannel.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\AssetStoreProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngineUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Dispatcher.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SceneIndexer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchContext.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryNodes.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\LogProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionPorts.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\NestedQueryHandler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\FuzzySearch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ListView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchAction.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\IntersectionEnumerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexerQuery.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\AsyncSearchSession.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SearchQueryProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DetailView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\DefaultNestedQueryAggregators.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchEngines.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\WhereEnumerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\UnionEnumerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Icons.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchVariable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\PackageManagerProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\StringView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\VisualSplitter.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\OnBoardingWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SJSON.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\NestedQueryEnumerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchDatabaseEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\IndexManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\FilterWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\AssetProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchResultCollection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\AggregateEnumerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchContent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DebugTimer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryError.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryFilters.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\CustomItemListView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchQuery\SearchQueryCreateWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\Calculator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\CustomItemSelectionWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchQuery\SearchQuery.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexComparer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionImporter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\EnumerableCreator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryTokenizer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryToken.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ResultView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchField.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\ObjectIndexer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\ResourceProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\IndexerExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\DefaultQueryHandler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryFilterOperators.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\HelpProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\GridView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Utils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchDatabase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionSelector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ResourceDescriptors.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ISearchView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpression.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\IInstruction.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\MenuProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\StaticMethodProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UnityVersion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DebugInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\DropdownWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngine.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Styles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionResultView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryGraphViewer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchService.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\StackedEnumerator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryFilterOperations.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionException.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchDatabaseImporter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\AssetIndexer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionBuilder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SceneProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\ObjectProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SceneQueryEngine.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\StringListView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngineAttributes.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\ListSelectionWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchSelection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryGraph.cs" />
-    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\Query.cs" />
     <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexerQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\FilterWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\StackedEnumerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\AssetStoreProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchRequest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchVariable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\StringView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\NestedQueryEnumerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchDatabase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SceneProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\DefaultQueryHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\IInstruction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionResultView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\NestedQueryHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchDatabaseEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Styles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\AssetPostprocessorIndexer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SearchQueryProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryFilterOperators.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ResourceDescriptors.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpression.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\StaticMethodProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Dispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SceneIndexer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\WhereEnumerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchQuery\SearchQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UnityVersion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\DefaultNestedQueryAggregators.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchEngines.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchResultCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DebugTimer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\ListSelectionWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\AsyncSearchSession.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\CustomItemListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\ResourceProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Utils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryGraphViewer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\AssetIndexer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\ObjectProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngineUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionPorts.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\IntersectionEnumerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryEngineAttributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ResultView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ListView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\UnionEnumerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\AggregateEnumerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchContent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\IndexerExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\FuzzySearch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Icons.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\ObjectIndexer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DebugInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\SearchExpressionNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\SceneQueryEngine.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\BlinkCursorScope.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\TryConvert.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\LogProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\DetailView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\PackageManagerProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\Calculator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\CustomItemSelectionWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\DropdownWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\Query.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QuickSearch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ChannelService\SearchChannel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\VisualSplitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Expressions\ExpressionInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\EnumerableCreator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\HelpProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\ISearchView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\MenuProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Indexing\SearchIndexer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryFilterOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchAction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\SearchList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\Providers\AssetProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryError.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryToken.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\QueryEngine\QueryTokenizer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\GridView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\UI\StringListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.quicksearch@2.0.2\Editor\StyleSheets\OnBoarding.uss" />
@@ -773,19 +776,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D7E7AA6B-D976-8CDF-65FB-1C2657FE9E6B}</Project>
+      <Project>{F07D918B-FC2E-022C-34BA-4D83A3963E08}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6040513E-62A6-1238-1C18-F968B1834137}</Project>
+      <Project>{2BCD4A29-6192-523A-BCBC-A31E8A5B0F89}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{053DEC94-3DEB-2D72-EB0C-06FBE80DCB9B}</Project>
+      <Project>{A9282EC8-5628-4847-0E7C-95321D74D869}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{9DBD1436-C1D8-F53F-47D8-D89BFB00C6CB}</Project>
+      <Project>{9B3A1DEA-6459-16D9-3466-C21E7FA9B024}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

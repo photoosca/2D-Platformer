@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E0086160-4CBF-0041-5933-A892E0173340}</ProjectGuid>
+    <ProjectGuid>{AD0D7226-0D81-783B-3781-3209533AA82D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Mathematics</AssemblyName>
@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\float4.gen.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\Noise\cellular2x2.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\int2.gen.cs" />
@@ -87,8 +90,8 @@
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\int4.gen.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\half4.gen.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\uint2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\rigid_transform.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\Noise\classicnoise4D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\rigid_transform.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\math.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\double4x3.gen.cs" />
     <Compile Include="Library\PackageCache\com.unity.mathematics@1.1.0\Unity.Mathematics\int4x4.gen.cs" />
@@ -737,11 +740,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D7E7AA6B-D976-8CDF-65FB-1C2657FE9E6B}</Project>
+      <Project>{F07D918B-FC2E-022C-34BA-4D83A3963E08}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6040513E-62A6-1238-1C18-F968B1834137}</Project>
+      <Project>{2BCD4A29-6192-523A-BCBC-A31E8A5B0F89}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

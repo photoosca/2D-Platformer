@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{42A0D65D-8057-6DD2-6BB7-4F649FCBB05E}</ProjectGuid>
+    <ProjectGuid>{2330F0F2-AAC0-1F2A-946D-8CDDF10E5A1B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.PixelPerfect.Editor</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1\Editor\PixelPerfectCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1\Editor\CinemachinePixelPerfectEditor.cs" />
@@ -661,23 +664,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
-      <Project>{4816C340-8C4E-859A-FF67-00A9D5BC0903}</Project>
+      <Project>{CD4C9C37-549D-8FE5-66AC-FB843AC54FFF}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D7E7AA6B-D976-8CDF-65FB-1C2657FE9E6B}</Project>
+      <Project>{F07D918B-FC2E-022C-34BA-4D83A3963E08}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6040513E-62A6-1238-1C18-F968B1834137}</Project>
+      <Project>{2BCD4A29-6192-523A-BCBC-A31E8A5B0F89}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{053DEC94-3DEB-2D72-EB0C-06FBE80DCB9B}</Project>
+      <Project>{A9282EC8-5628-4847-0E7C-95321D74D869}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{9DBD1436-C1D8-F53F-47D8-D89BFB00C6CB}</Project>
+      <Project>{9B3A1DEA-6459-16D9-3466-C21E7FA9B024}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

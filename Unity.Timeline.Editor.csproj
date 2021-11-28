@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9CB2DF19-6132-081D-057C-6E5451D41A78}</ProjectGuid>
+    <ProjectGuid>{D7748FB6-4782-2CE7-C48C-C92E86178697}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Timeline.Editor</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\AnimationPlayableAssetInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Actions\Menus\MenuItemActionBase.cs" />
@@ -121,8 +124,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Utilities\TrackResourceCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\EditorClipFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\ManipulationsClips.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Manipulators\Sequence\Jog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\Drawers\InfiniteTrackDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Shortcuts.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Window\TimelineWindowTimeControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Window\TimelineWindow_EditorCallbacks.cs" />
@@ -259,10 +262,10 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Window\PlaybackScroller.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\TrackAssetInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Utilities\Scopes\GUIGroupScope.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Actions\MarkerActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Utilities\AnimatedParameterUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Window\TimelineWindow_Manipulators.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\PickerUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Actions\MarkerActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\inspectors\BasicAssetInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\treeview\TrackGui\TimelineGroupGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Editor\Actions\ActionManager.cs" />
@@ -917,23 +920,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{5DBA23C3-314F-606D-9FD0-1F9C5D6B51D8}</Project>
+      <Project>{2667FCE4-CCB2-12B0-5CC3-4CEFE85A72EB}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{D7E7AA6B-D976-8CDF-65FB-1C2657FE9E6B}</Project>
+      <Project>{F07D918B-FC2E-022C-34BA-4D83A3963E08}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{6040513E-62A6-1238-1C18-F968B1834137}</Project>
+      <Project>{2BCD4A29-6192-523A-BCBC-A31E8A5B0F89}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{053DEC94-3DEB-2D72-EB0C-06FBE80DCB9B}</Project>
+      <Project>{A9282EC8-5628-4847-0E7C-95321D74D869}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{9DBD1436-C1D8-F53F-47D8-D89BFB00C6CB}</Project>
+      <Project>{9B3A1DEA-6459-16D9-3466-C21E7FA9B024}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
